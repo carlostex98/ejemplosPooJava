@@ -32,6 +32,16 @@ public class Ejemplos_opp {
         Libro c = libros.get(0);
         c.imprimirDatos();
         System.out.println("\n");
+        //ejemplo 3 ----------------------------
+        System.out.println("Ejemplo 3 ----------------------------");
+        Lista lista = new Lista();
+        lista.iniciarLista();
+        String aux_val = "";
+        for (int z = 0; z<100; z++){
+            aux_val = String.valueOf(z);
+            lista.nuevoAuto("Marca xxx-"+aux_val, "Linea xxx-"+aux_val, "Anio xxx-"+aux_val);
+        }
+        lista.imprimirLista();
         
     }
 }
